@@ -1,12 +1,13 @@
 import streamlit as st
 
-from geopy.geocoders import Nominatim
+
 import folium
 from streamlit_folium import st_folium
 
 import pandas as pd
 import pickle
 from datetime import datetime
+from geopy.geocoders import Nominatim
 
 # Load the pre-trained model and columns
 with open("voting_model.pkl", "rb") as file:
